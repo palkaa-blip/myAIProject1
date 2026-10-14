@@ -1,0 +1,982 @@
+programe--> set of rules step by step problem slution that called prog. 
+
+
+sadasd
+ss
+sdsddddsdfsfsd
+software --> colelction small prog. that called software 
+
+   1) system soft  ---> hw / sw os win 2-3% 
+   
+   2) application soft ---> particular task  20-30% 
+   3) customiz soft  --> client requent  70-80% 
+
+                       web server 
+                            net 
+
+1) desktop app       2) online app     3) mobile app 
+offline                   online            online
+ lan                        wan             python java
+python                 python java           kotline 
+ java                  php mern stack        obj c react native 
+ c/c++ 
+
+
+ python lang. 
+
+  open sourse
+      1) freee 
+      2) mulit plantform 
+      3) interpreter
+  
+ 1)  GUI desktop
+ 2)  CGI online 
+ 3)  kivy mobile 
+ 4)  ML data analysis
+ 5)  ML AI 
+ 6)  pygame 
+ 7)  Socket programing 
+
+
+ basice  
+ python.org
+
+  download
+   install 
+   IDLE 
+
+ new open 
+ F5 run 
+
+--------------
+1) data type ---> value type 
+2) varble  --> tem space 
+3) constent --> value fixed 
+4) oparator 
+ two and more the varble with opation 
+ no1   +   no2  
+
+ type of operators
+
+ 1) arithomitc
+   + 
+   -
+   *
+   / 
+   %
+   // floor div
+   ** exponet 
+ 
+----------
+no1=5
+no2=2
+res=no1//no2
+print(res)
+
+eg- 
+num1 = 31
+num2 = 25
+res = num1 + num2
+print(res)
+
+num1 = 31
+num2 = 25
+res = num1 - num2
+print(res)
+
+num1 = 31
+num2 = 25
+res = num1 * num2
+print(res)
+
+num1 = 31
+num2 = 25
+res = num1 % num2
+print(res)
+--------------
+no1=5
+no2=3
+res=no1**no2
+print(res)
+-------------
+ 2) compresseion / realational 
+   > 
+   < 
+   >=
+   <= 
+   ==
+   != 
+-----
+
+no=5
+print(no>0)
+
+eg-
+num = 31
+print(num < 51)
+num = 25
+print(num != 50)
+-----
+
+ 3) assement 
+  = 
+  +=
+  -=
+  *=
+  /= 
+  %= 
+-----
+
+no=5
+#no=no+2
+no+=2
+print(no)
+
+eg-
+num = 31
+num %= 2
+print(num)
+
+num = 31
+num -= 25
+print(num)
+----
+
+
+ 4) logical 
+
+  and 
+  or 
+  not 
+------------
+sub='sc'
+per=40
+st='mp'
+
+#print(sub=='sc' and per>=60 and st=='raj')
+print(sub=='sc' or per>=60 or st=='raj')
+
+eg-
+age = "25"
+state = "rajasthan"
+percentage = "80%"
+print (age=="25" and state=="rajasthan" and percentage=="70%")
+
+age = "25"
+state = "rajasthan"
+percentage = "80%"
+print (age=="25" or state=="rajasthan" or percentage=="70%")
+
+and in "not operator" if it is true then the output show false if false then output shows true
+------------
+----------
+no=True
+print(not no)
+---------
+
+ 5) bitwase 
+ 0101
+ 1111
+------ and 
+ 0111
+
+5) keyoword  
+ keyword 
+ print 
+  if 
+ else 
+  for 
+-----------------------
+ condtion statement
+ 1) if 
+ 2) if else 
+ 3) if elif else  
+ 
+if(condtion):
+    print(true)
+
+if(condtion):
+    print(true)
+else:
+    print(false)
+
+------------
+no=-5
+if(no>=0):
+    print("positive no")
+----------------
+no=-5
+if(no>=0):
+    print("positive no")
+else:
+    print("nagative no")
+-----------------
+ even / odd -
+eg-
+num= 40
+if(num/2):
+    print("even number")
+else:
+     print("negative number")
+
+
+ fail / pass -
+eg-
+num= 80
+if(num>=80):
+    print("pass")
+else:
+      print("fail")
+
+
+ age>18 give vote -eg-
+age= 18
+if(age>=18):
+    print("eligible for vote")
+else:
+      print("not eligible for vote")
+
+----------------------------------------------- 26/09/26
+ if elif else (nested if)
+ 
+if(condtion):
+     true 
+elif(condtion)
+     true 
+elif(condtion):
+     true 
+else:
+    false 
+-------------
+per=30
+if(per>=60):
+    print("I div") # true
+elif(per>=45):
+    print("II div") #True
+elif(per>=36):
+    print("III div")#True
+else:
+    print("fail") 
+
+eg-
+marks= 30
+if (marks>=70):
+    print("Ist")
+elif (marks>=55):
+    print("IInd")
+elif (marks>=45):
+    print("IIIrd")
+else:
+    print("fail")
+       
+-------------
+
+ enter the 5 sub marks  total per div 
+
+ all +  
+per= total/500*100
+----------------------------------
+
+hi=int(input("Enter the hi marks"))
+en=int(input("Enter the en marks"))
+py=int(input("Enter the py marks"))
+ch=int(input("Enter the ch marks"))
+math=int(input("Enter the math marks"))
+
+total=hi+en+py+ch+math
+print("total marks rasult",total)
+
+per=total/500*100
+print("persentes is ",per)
+
+
+if(per>=60):
+    print("I div") # true
+elif(per>=45):
+    print("II div") #True
+elif(per>=36):
+    print("III div")#True
+else:
+    print("fail")
+---------------------------------
+hi=int(input("Enter the hi marks"))
+en=int(input("Enter the en marks"))
+py=int(input("Enter the py marks"))
+ch=int(input("Enter the ch marks"))
+math=int(input("Enter the math marks"))
+
+total=hi+en+py+ch+math
+print("total marks rasult",total)
+
+per=total/500*100
+print("persentes is ",per)
+
+
+if(per>=60):
+    print("I div") # true
+elif(per>=45):
+    print("II div") #True
+elif(per>=36):
+    print("III div")#True
+else:
+    print("fail")
+        
+
+if(hi<36):
+    print("back in hindi")
+if(en<36):
+    print("back in english")
+if(py<36):
+    print("back in pysices")
+if(ch<36):
+    print("back in chemistry")
+
+if(math<36):
+    print("back in math")
+    
+---------------------------------
+bill =1400
+if(bill>=2000):
+    dic=bill*5/100
+    netbill=bill-dic
+    print("dic amount",dic)
+    print("net pay bill",netbill)
+elif(bill>=1500):
+    dic=bill*3/100
+    netbill=bill-dic
+    print("dic amount",dic)
+    print("net pay bill",netbill)
+elif(bill>=1000):
+    dic=bill*3/100
+    netbill=bill-dic
+    print("dic amount",dic)
+    print("net pay bill",netbill)
+else:
+    dic=0
+    netbill=bill-dic
+    print("dic amount",dic)
+    print("net pay bill",netbill)
+
+eg-
+bill= 7000
+if (bill>=10000):
+    dis=bill*10/100
+    total=bill-dis
+    print("dis amount",dis)
+    print("total bill",total)
+elif (bill>=6000):
+    dis=bill*5/100
+    total=bill-dis
+    print("dis amount",dis)
+    print("total bill",total)
+elif (bill>=2000):
+    dis=bill*2/100
+    total=bill-dis
+    print("dis amount",dis)
+    print("total bill",total)
+else:
+    dis=0
+    total=bill-dis
+    print("dis amount",dis)
+    print("total bill",total)
+------------------------------------
+loops 
+1)  start 
+2)  end 
+3)  increment / dicrement 
+start 
+1+1
+2+1
+3+1
+4+1
+5+1
+6+1
+7+1
+8+1
+9+1
+10
+end 
+
+
+1)for in--> one line statement/ entry control /  termination must be 
+
+ for a  in range(1,11,1):
+         print(a)
+
+-------------------
+
+for a in range(0,11,1):
+    print(a)
+-------------------
+for a in range(10,0,-1):
+    print(a)
+
+-----------------
+sum=0
+for a in range(1,11,1):
+    sum=sum+a
+    print(a)
+print("sum of no is ",sum)
+---------------------
+for a in range(1,11,1):
+    if(a%2==0):
+        print("even ",a)
+    else:
+        print("old  ",a)
+    
+------------------------
+esum=0
+osum=0
+
+for a in range(1,11,1):
+    if(a%2==0):
+        esum=esum+a
+        print("even ",a)
+    else:
+        osum=osum+a
+        print("old  ",a)
+    
+print("Even no sum  ",esum)
+print("Odd no sum  ",osum)
+------------------------------
+no=5
+for a in range(1,11,1):
+    t=no*a
+    print(t)
+----------------------
+no=int(input("Enter the table no"))
+for a in range(1,11,1):
+    t=no*a
+    print(no,"*",a,"=",t)
+----------------------------------
+
+
+while --> multi line/ entrycontrol / termination not must be
+
+a=1
+while(a<=10):
+   print(a)
+   a=a+1
+
+-------------------
+a=10
+while(a>=1):
+   print(a)
+   a=a-1
+------------------
+a=1
+while(a<=10):
+    if(a%2==0):
+        print("even",a)
+    else:
+        print("old ",a)
+    a=a+1
+
+-------------------28-09-26
+
+sdfdsfds d ssdf sf <keenonlineudr@gmail.com>
+10:43 (0 minutes ago)
+to me
+
+lst=  [10,20,30,40,50,60,70,80,20,90]
+#index  0  1  2  3  4  5  6  7  8
+#                      -4 -3 -2 -1
+
+#print(lst[3])
+#print(lst[-2])
+#print(lst[3:7])
+#print(lst[3:-4])
+#print(lst[2:])
+#print(lst[:4])
+#print(lst[:-5])
+#print(lst[:])
+#--------------------
+#lst[2]=100
+#lst.append(100)
+
+#lst.clear()
+#print(lst.count(20))
+
+#lst2=[1,2,3]
+#lst.extend(lst2)
+
+#print(lst.index(20))
+
+#lst.insert(3,100)
+#lst.pop()
+#lst.pop(4)
+#lst.remove(30)
+#lst.reverse()
+#lst.sort()
+
+#lst2=[10,20,30,40,[1,2,3]]
+#index 0  1  2  3    4
+ #                 0 1 2
+
+#print(lst2[4])
+
+
+#print(lst)
+#-----------------------------------
+
+#for a in lst:
+  #  print(a)
+
+
+tp=(10,20,30,40,50,60)
+#    0  1  2  3  4  6
+#print(tp)
+#tp[2]=100
+#tp=pop()
+
+#print(tp)
+ 
+#-------------------------
+dict={"name":"rajesh","age":34,"city":"udr"}
+#       key     value key value  key   value
+#print(dict["age"])
+
+dict.
+
+---------------------
+ function                     29 sept
+
+ def msg():  # create fucntion 
+      print("this is my fucntion ")
+
+ call finction 
+msg()
+
+1) parameterwise 
+2) non parameterwise 
+ 
+----------------
+parameterwise-
+
+def sum(x,y): # create function paramiterwase 
+    z=x+y
+    print("sum of no is ",z)
+
+print("main code")
+print("main code")
+
+sum(5,6) #call function
+
+print("main code")
+sum(100,200)
+print("main code")
+sum(500,300)
+
+-------------------------
+
+def msg():
+    print("welcome python function")
+
+msg()
+-----------------------
+def sum(x,y): 
+    z=x+y
+    #print("sum of no is ",z)
+    return z
+
+print("main code")
+res=sum(5,6)
+res2=res+10
+print("result",res2)
+
+--------------------------------
+#default argument 
+
+def sum(x,y,a=0):  
+    z=x+y+a
+    print("sum of no is ",z)
+    
+
+print("main code")
+sum(5,6,7) #call function
+-------------------------------
+# arbetry argument  
+def sum(*x):
+    s=0
+    for a in x:
+        s=s+a
+    
+    print("sum of no is ",s)
+    
+
+print("main code")
+sum(5,6,6,7,8,9) #call function
+
+eg-
+
+------------------------------------
+# keyarbetry argument  
+def per(**x):
+    for a in x:
+        print(a,"=",x[a])
+    
+
+print("main code")
+per(name="raj",age="23",city="udaipur") #call function
+
+-----------------------------------------
+
+def checkno(no):
+    if(no%2==0):
+        print("even no")
+    else:
+        print("odd no")
+    
+
+print("main code")
+n=int(input("Enter the check no"))
+checkno(n)
+------------------------------------
+ file handing 
+
+W write
+w -->write
+w+ -->write read 
+wb --> write in binery 
+wb+ --> write read in binery 
+
+
+R Read
+r --> read 
+r+ -->read and write 
+rb --> read in binery
+rb+ -->read write binery 
+
+A Append 
+a -->append add 
+ab --> append in binery 
+
+ python  open() open the file / create new file 
+
+---------------
+myfile=open("abc29.txt","w")
+myfile.write("this is my  first file")
+myfile.close()
+
+-----------------------
+myfile=open("abc29.txt","r")
+res=myfile.read()
+print(res)
+myfile.close()
+-----------------
+
+myfile=open("abc29.txt","a")
+myfile.write("   ...more tesxt add ")
+
+myfile.close()
+----------------------
+
+myfile=open("abc29.txt","r")
+res=myfile.read()
+print(res)
+myfile.close()
+
+-----------------------
+oops                       30 sept
+ class 
+ method (function )
+ object 
+class jsut like a blue print (bilding map)
+
+ oject acutul building 
+
+---------------
+class Myclass: # create class 
+    x=5 #data member
+    def msg(self): # non-parameterized method 
+        print("myclass method")
+
+
+obj=Myclass() # create object
+
+
+obj.msg()    
+--------------------
+class Myclass: # create class 
+    x=5 #data member
+    def msg(self): # non-parameterized method 
+        print("myclass method")
+
+
+obj=Myclass() # create object
+obj.msg()    
+print(obj.x)
+--------------------------
+class Myclass: # create class 
+    x=5 #data member
+    def msg(self): # non paramiterwase method 
+        print("myclass method")
+    def sum(self,x,y):# paramiterwase method
+        z=x+y
+        print("sum of no is ",z)
+
+obj=Myclass() # creat object
+obj.msg()    
+#print(obj.x)
+obj.sum(5,6)
+-------------------------------------
+class Myclass:  
+    x=5
+    def __init__(self):
+        print("myclass construtor")
+    
+    def msg(self):  
+        print("myclass method")
+
+
+obj=Myclass()
+#obj.msg()    
+--------------
+class Myclass:  
+    x=5
+    def __init__(self,n,a):
+        self.name=n
+        self.age=a
+        print("myclass construtor")
+        print("name= ",self.name)
+        print("age= ",self.age)
+    def msg(self):  
+        print("myclass method")
+        
+
+obj=Myclass("rajesh",34)
+obj.msg()    
+
+------------------
+class Myclass:  
+    x=5
+    def __init__(self,n,a):
+        self.name=n
+        self.age=a
+        print("myclass construtor")
+        #print(n)
+        #print("name= ",self.name)
+        #print("age= ",self.age)
+    def msg(self):  
+        print("myclass method")
+        print("name= ",self.name)
+
+
+obj=Myclass("rajesh",34)
+obj.msg()    
+
+--------------------  
+class Myclass:  
+    x=5
+    def __init__(self,n,a):
+        self.name=n
+        self.age=a
+        print("myclass construtor")
+        #print("name= ",self.name)
+        #print("age= ",self.age)
+    def msg(self):  
+        print("myclass method")
+        
+    def __del__(self):
+        print("myclass distructor")
+
+        
+obj=Myclass("rajesh",34)
+#obj.msg()    
+del obj
+obj.msg()
+      
+--------------------
+ inheritence 
+ class -> other class call
+ parent  ---> child
+
+ class Parent: 
+     x=4
+     def msg1(self):
+            print("parent class method ")
+ class Child:
+     y=5
+     def msg2(self):
+            print("Child class method ")
+
+
+obj=Parent()
+obj.msg1()
+ 
+obj=Child()
+obj.msg2()
+
+
+----------------------
+#inheritence 
+class Parent:
+    x=4
+    def msg1(self):
+        print("parent class method ")
+
+class Child(Parent): #inheritence
+    y=5
+    def msg2(self):
+        print("Child class method ")
+
+obj=Child()
+obj.msg2()
+obj.msg1()
+------------------------------
+#method overwrite 
+class Parent:
+    x=4
+    def msg(self):
+        print("parent class method ")
+
+class Child(Parent): #inheritence
+    y=5
+    def msg(self):
+        print("Child class method ")
+
+obj=Child()
+obj.msg()
+----------------------------
+#method overwrite  super method
+class Parent:
+    x=4
+    def __init__(self):
+        print("parent class constructor")
+        
+    def msg(self):
+        print("parent class method ")
+
+class Child(Parent): #inheritence
+    y=5
+    def __init__(self):
+        print("Child class constructor")
+        super().__init__()
+   
+    def msg(self):
+        print("Child class method ")
+
+obj=Child()
+obj.msg()
+
+----------------------
+#method overwrite use in class parent 
+class Parent:
+    x=4
+    def __init__(self):
+        print("parent class constructor")
+        
+    def msg(self):
+        print("parent class method ")
+
+class Child(Parent): #inheritence
+    y=5
+    def __init__(self):
+        print("Child class constructor")
+        Parent.__init__(self)
+   
+    def msg(self):
+        print("Child class method ")
+
+obj=Child()
+obj.msg()
+
+----------------------------
+#method overwrite use method
+class Parent:
+    x=4
+    def __init__(self):
+        print("parent class constructor")
+        
+    def msg(self):
+        print("parent class method ")
+
+class Child(Parent): #inheritence
+    y=5
+    def __init__(self):
+        print("Child class constructor")
+        Parent.__init__(self)
+   
+    def msg(self):
+        print("Child class method ")
+        super().msg()
+
+obj=Child()
+obj.msg()
+
+------------------------------------
+
+ type of inheritence 
+ 1) single 
+ 2) multipal 
+ 3) multoilevel 
+ 4) hibride 
+ 5) herarchical 
+  
+3) polimorephims
+ print(len("udaipur"))
+    7 
+
+ print(len([10,20,30]))
+    3 
+ 
+4)  encapsulation 
+  public 
+  protected 
+  pravit
+
+5) data abstrcution 
+  ABC
+
+
+
+ AI THEORY-              2nd oct
+
+ Introduction to AI?-
+- Artificial Intelligence (AI) is the field of computer science focused on building systems that can perform tasks normally requiring human intelligence, such as learning, reasoning, understanding language, recognizing images, and making decisions.
+
+Types of AI-
+
+Narrow AI: Does one specific task well (alexa, voice assistants). 
+General AI (AGI): A hypothetical system with human-level ability across any task. It doesn't exist yet(it perform multiple tasks).
+
+Everyday examples: Netflix recommendations, Google Maps traffic predictions, Siri/Alexa, fraud detection in banking, and chatbots.
+ 
+what is  Generative AI?-
+Generative AI is a type of AI that creates new content, such as text, images, audio, video, or code, instead of just analyzing or classifying existing data.
+
+How it differs from traditional AI
+
+Traditional AI: Answers questions like "Is this email spam?" or "Is this a cat or a dog?" It labels or predicts.
+Generative AI: Produces something new, like "Write an email," "Draw a cat in a spacesuit," or "Compose a melody."
+
+
+Traditional AI/ML looks at data and tells you something about it.
+Generative AI looks at data and makes something new.
+
+Simple examples
+Traditional ML: "Is this email spam?" → Yes / No
+Traditional ML: "What will this house sell for?" → ₹50 lakh
+Generative AI: "Write me an email." → A brand new email
+Generative AI: "Draw a cat on the moon." → A brand new image
+ 
+
+what is AI agents, chatbots, GenAI tools?-
+GenAI tool: You give it an input, it creates something. (Midjourney makes an image, Copilot suggests code.)
+
+Chatbot: You talk to it, and it answers. (ChatGPT, Claude, a bank's support bot.)
+
+AI agent: You give it a goal, and it does the work using tools. (Searches, books, emails, runs code.)
+
+Easy analogy
+
+GenAI tool = a camera: you use it, it produces something.
+Chatbot = a help desk person: you ask, they reply.
+AI agent = a personal assistant: you say "organize my trip," and they go do it.
+
+what is LLM- LLM stands for Large Language Model. It is an AI model trained on huge amounts of text (books, websites, articles, code) so it can understand and generate human language.
+
+
+
+
+

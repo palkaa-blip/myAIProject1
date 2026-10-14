@@ -1,0 +1,256 @@
+ MY AI project Notes 
+
+
+#inheritence
+
+
+
+
+class Myclass:
+    def msg1(self):
+        print("myclass method ")
+
+class Otherclass(Myclass):
+    def msg2(self):
+        print("Otherclass method")
+
+
+obj=Otherclass()
+obj.msg2()
+obj.msg1()
+-------------------------------
+#method overwrite
+
+class Myclass:
+    def msg(self):
+        print("myclass method ")
+
+class Otherclass(Myclass):
+    def msg(self):
+        print("Otherclass method")
+
+obj=Otherclass()
+obj.msg()
+------------------------------
+
+#method overwrite with supper method
+
+class Myclass:
+    def msg(self):
+        print("myclass method ")
+
+class Otherclass(Myclass):
+    def msg(self):
+        print("Otherclass method")
+        super().msg()
+
+obj=Otherclass()
+obj.msg()
+-----------------------------
+#method overwrite with supper method
+
+class Myclass:
+    def __init__(self):
+        print("myclass constructor")
+        
+    def msg(self):
+        print("myclass method ")
+
+class Otherclass(Myclass):
+    def __init__(self):
+        print("Otherclass constructor")
+        super().__init__()
+    
+    def msg(self):
+        print("Otherclass method")
+obj=Otherclass()
+obj.msg()
+---------------------------------
+#method overwrite with class  method
+
+class Myclass:
+    def __init__(self):
+        print("myclass constructor")
+        
+    def msg(self):
+        print("myclass method ")
+
+class Otherclass(Myclass):
+    def __init__(self):
+        print("Otherclass constructor")
+        Myclass.__init__(self)
+    
+    def msg(self):
+        print("Otherclass method")
+obj=Otherclass()
+obj.msg()
+----------------------------------------
+ inheritence type 
+
+ 1) single 
+ 2) multipal 
+ 3) multi level 
+ 4) hibrid 
+ 5) herarchical
+
+----------------------
+#single 
+class Myclass:  #One class main class
+    def msg1(self):
+        print("myclass method ")
+
+class Otherclass(Myclass):#Other class inheritence 
+    def msg2(self):
+        print("Otherclass method")
+obj=Otherclass()
+obj.msg1()
+obj.msg2()
+
+------------------------
+#multipal
+class Father:  
+    def msg1(self):
+        print("Father class  method ")
+
+class Mother(): 
+    def msg2(self):
+        print("Method class method")
+
+
+class Child(Father, Mother):# two class inheritence
+    def msg3(self):
+        print("child class method")
+
+obj=Child()
+obj.msg1()
+obj.msg2()
+obj.msg3()
+
+-------------------------
+
+#multi lavel 
+class Gradfather:  
+    def msg1(self):
+        print("Father class  method ")
+
+class Father(Gradfather): 
+    def msg2(self):
+        print("Method class method")
+
+
+class Child(Father):# two class inheritence
+    def msg3(self):
+        print("child class method")
+
+obj=Child()
+obj.msg1()
+obj.msg2()
+obj.msg3()
+-------------------
+#Hierarchical Inheritance
+ 
+class Parent:  
+    def msg1(self):
+        print("Parent class  method ")
+
+class Child1(Parent): 
+    def msg2(self):
+        print("Child1 class method")
+
+
+class Child2(Parent):# two class inheritence
+    def msg3(self):
+        print("child2 class method")
+
+obj1=Child1()
+obj2=Child2()
+
+obj1.msg1()
+obj1.msg2()
+obj2.msg3()
+obj2.msg1()
+----------------------
+
+class School:
+    def func1(self):
+        print("This function is in school.")
+
+class Student1(School):
+    def func2(self):
+        print("This function is in student 1.")
+
+class Student2(School):
+    def func3(self):
+        print("This function is in student 2.")
+
+class Student3(Student1, School):
+    def func4(self):
+        print("This function is in student 3.")
+
+obj = Student3()
+obj.func1()
+obj.func2()
+
+--------------------------------------------------
+
+class employee:
+    def __init__(self, id, sly):
+        self.id = id
+        self.sly = sly
+       
+class salesemploy(employee):
+    def ssemp(self, sales, id, sly):
+        self.sales = sales
+        employee.__init__(self, id, sly)
+        
+    def printdata(self):    
+        print("id number ", self.id," has ", self.sly, " salary and has done ", self.sales , " sales.")
+
+e1=salesemploy(4, 5)
+e1.ssemp(3, 5, 6)
+e1.printdata()
+
+--------------------------
+******* corrected method of above*************
+class Employee:
+    def __init__(self, id, sly):
+        self.id = id
+        self.sly = sly
+       
+class Salesemploy(Employee):
+    def __init__(self, sales, id, sly):
+        self.sales = sales
+        Employee.__init__(self, id, sly)
+        
+        
+    def printdata(self):    
+        print("id number ", self.id," has ", self.sly, " salary and has done ", self.sales , " sales.")
+
+e1=Salesemploy(1001, 5000,10000)
+e1.printdata()
+#e1.ssemp()
+
+----------------------
+
+class Grandfather:
+    def __init__(self, grandfathername):
+        self.grandfathername = grandfathername
+
+class Father(Grandfather):
+    def __init__(self, fathername, grandfathername):
+        self.fathername = fathername
+        Grandfather.__init__(self, grandfathername)
+
+class Son(Father):
+    def __init__(self, sonname, fathername, grandfathername):
+        self.sonname = sonname
+        Father.__init__(self, fathername, grandfathername)
+
+    def print_name(self):
+        print('Grandfather name :', self.grandfathername)
+        print('Father name :', self.fathername)
+        print('Son name :', self.sonname)
+
+s1 = Son('Prince', 'Rampal', 'Lal mani')
+s1.print_name()
+-----------------------------

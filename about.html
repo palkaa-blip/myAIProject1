@@ -131,5 +131,33 @@
     <p>A learning journey, one line at a time.</p>
     <a class="back-to-top" href="#top">Back to top <span aria-hidden="true">↑</span></a>
   </footer>
+  <aside class="chat-widget" aria-label="Chat demo">
+    <section class="chat-panel" id="chat-panel" role="dialog" aria-labelledby="chat-title" aria-hidden="true" hidden>
+      <header class="chat-header">
+        <div>
+          <h2 id="chat-title">Project chat</h2>
+          <p><span class="chat-status-dot" aria-hidden="true"></span> Python demo · scripted replies</p>
+        </div>
+        <button class="chat-close" id="chat-close" type="button" aria-label="Close chat">×</button>
+      </header>
+      <div class="chat-messages" id="chat-messages" aria-live="polite" aria-relevant="additions text">
+        <p class="chat-message chat-message-bot">Hi! Ask me about this project or what we're learning. Start the Python server with <code>python app.py</code> to chat.</p>
+      </div>
+      <div class="chat-suggestions" aria-label="Suggested questions">
+        <button type="button" data-question="What are you learning?">What are you learning?</button>
+        <button type="button" data-question="Tell me about Python inheritance">What is inheritance?</button>
+      </div>
+      <form class="chat-form" id="chat-form">
+        <label class="visually-hidden" for="chat-input">Your message</label>
+        <input id="chat-input" name="message" type="text" maxlength="300" placeholder="Type a message..." autocomplete="off" required>
+        <button type="submit" aria-label="Send message">Send <span aria-hidden="true">↑</span></button>
+      </form>
+    </section>
+    <button class="chat-launcher" id="chat-launcher" type="button" aria-expanded="false" aria-controls="chat-panel">
+      <span class="chat-launcher-icon" aria-hidden="true">✳</span>
+      <span>Chat with us</span>
+    </button>
+  </aside>
+  <script src="about.js" defer></script>
 </body>
 </html>
